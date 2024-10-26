@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\RatingRestaurant;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Restaurant extends Model
 {
+    use HasFactory;
+
     /**
      * The attributes that are mass assignable.
      *

@@ -21,8 +21,8 @@ class RatingsRestaurantsSeeder extends Seeder
                 RatingRestaurant::create([
                     'restaurant_id' => $restaurant->id,
                     'user_id' => $user->id,
-                    'ratings' => $ratings[array_rand($ratings)],
-                    'cities' => $cities[array_rand($cities)],
+                    'rating' => $ratings[array_rand($ratings)],
+                    'city' => $cities[array_rand($cities)],
                 ]);
             });
         });
