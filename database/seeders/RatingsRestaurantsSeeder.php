@@ -13,7 +13,7 @@ class RatingsRestaurantsSeeder extends Seeder
 {
     public function run()
     {
-        $cities = [ 'Milano', 'Roma', 'Torino', 'Firenze'];
+        $cities = [ 'milano', 'roma', 'torino', 'firenze'];
         $ratings = [2, 1, 0, -1, -2];
 
         Restaurant::all()->each(function ($restaurant) use ($cities, $ratings) {

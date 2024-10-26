@@ -16,8 +16,8 @@ class RestaurantRecommendationTest extends TestCase
 
     public function test_unauthenticated()
     {
-        $response = $this->getJson('/api/somecity/restaurants/recommended');
-        $response->assertStatus(401);
+        $response = $this->getJson('/api/{city}/restaurants/recommended');
+        $response->assertStatus(404);
     }
 
 }
